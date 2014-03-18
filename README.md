@@ -9,7 +9,7 @@ IDE stands for Integrated Development Environment. It's basically an advanced co
 Free to use. You can just grab the standard version. [Download](https://www.eclipse.org/downloads/)
 
 ### IntelliJ
-There's a professional version you have to pay for, but they also have a free Community Edition that will satisfy all of your needs. [Download](http://www.jetbrains.com/idea/download/)
+There's a professional version you have to pay for, but they also have a free Community Edition that will satisfy all of your needs. This project includes IntelliJ project files to make getting started easy. [Download](http://www.jetbrains.com/idea/download/)
 
 ## Compiling a Project from the Command Line
 If you stick with Java, at some point in your life, you'll run into a situation where you can't have an IDE compile for you. For example, for small things, I personally don't like to use IDEs at all. I use my favorite text editor, [Sublime Text](http://www.sublimetext.com/), which doesn't compile Java out of the box. Thankfully, doing simple Java compilations are a piece of cake (although they can quickly get quite complex).
