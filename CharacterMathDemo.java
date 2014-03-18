@@ -3,31 +3,40 @@
  * represented by binary encoding. There are many types of character
  * encoding. Java uses UTF-16 which stands for "16-bit Unicode Transformation
  * Format", and it means that Java characters are represented by 16-bit
- * strings. 
+ * strings.
+ *
+ * Essentially, that means that every character actually has an underlying
+ * decimal value. This can be found in what's called an "ASCII Table." You
+ * can see one here: http://www.asciitable.com/
+ *
+ * You can do lots of neat tricks with that nugget of information, so
+ * here are a few of them.
  */
 public class CharacterMathDemo {
     
     public static void main(String[] args) {
-        // Characters in Java are generally enclosed with apostrophes ('').
-        // Java can convert the 16-bit string of a character to an integer equivalent.
-        int five = '5';
+        // You can grab the ASCII value of any character.
+        int a = 'A';
+        System.out.println("The ASCII value of 'A' is " + a);
+
+        // Because characters have decimal equivalents, we can use the difference
+        // between two characters to find its face value.
+        int five = '5' - '0';
         System.out.println("The character '5' has a decimal value of " + five);
 
-        
-        // Because characters have decimal equivalents, we can use the difference
-        // between two characters. Here we demonstrate how to find the position of
-        // a letter in the alphabet.
+        // Here we demonstrate how to find the position of a letter in the alphabet.
         int positionOfG = 'g' - 'a';
         System.out.println("The character 'g' is the " + (positionOfG + 1) + "th letter of the alphabet.");
 
         // Conversion can go both ways if we type cast an integer as a character.
         // How can you create a your own ascii table using this?
-        System.out.println("65 is the decimal value of " + (char)(65));
+        System.out.println("65 is the ASCII value of " + (char)(65));
 
         // Our own "toUpper" function
         System.out.println("The uppercase of 'a' is " + toUpper('a'));
 
-        // Something a bit trickier
+        // Something a bit trickier. We can actually make our own version
+        // of Integer.parseInt()
         int n1 = parseInt("1");
         int n2 = parseInt("8675308");
         System.out.println(n1 + n2);

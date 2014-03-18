@@ -36,7 +36,7 @@ public class HashMapDemo {
         ages.put("uncle ben", 53);
 
         // Take it out
-        System.out.println("Mary Jane is " + ages.get("mary jane") + " years old.");`
+        System.out.println("Mary Jane is " + ages.get("mary jane") + " years old.");
 
 
         // This is just defining an array of strings with some duplicates
@@ -50,8 +50,8 @@ public class HashMapDemo {
 
     /**
      * Uses an O(n^2) algorithm to find all of the unique items in a list.
-     * @param  A list to find unique items in
-     * @return   A collection representing the unique items in a.
+     * @param   a   A list to find unique items in
+     * @return      A collection representing the unique items in a.
      */
     private static Collection<String> findUniqueSlow(String[] a) {
         // We use an arraylist to hold our output, because we don't
@@ -79,7 +79,7 @@ public class HashMapDemo {
 
     /**
      * Uses an O(n) algorithm to find all of the unique items in a list.
-     * @param  A list to find unique items in
+     * @param  a list to find unique items in
      * @return   A collection representing the unique items in a.
      */
     private static Collection<String> findUniqueFast(String[] a) {
