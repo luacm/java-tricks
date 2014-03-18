@@ -13,6 +13,9 @@ import java.util.Arrays;
  *
  * So after you call the split() method, you then have an array of tokens
  * you can loop through to do whatever you please with.
+ *
+ * Javadoc
+ * http://docs.oracle.com/javase/7/docs/api/java/lang/String.html#split(java.lang.String)
  */
 public class SplitDemo {
     

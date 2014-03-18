@@ -18,6 +18,9 @@ import java.lang.Thread;
  * and can be seen below. You really just write out the class inline with the
  * rest of your code. It looks weird at first, but you'll get used to it,
  * and it's very powerful.
+ *
+ * Javadoc
+ * http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html
  */
 public class RunnableDemo {
     
